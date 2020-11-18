@@ -1,5 +1,5 @@
 @import 'generales', 'variables';
-nav.escritorio{
+.escritorio{
     width: 100%;
     height: 80px;
     padding-left: 10%;
@@ -53,7 +53,7 @@ nav.escritorio{
 
 .movil{
     width: 80%;
-    max-width: 600px;
+    max-width: 375px;
     height: 100vh;
     background: #fff;
     position: fixed;
@@ -65,35 +65,51 @@ nav.escritorio{
     display: none;
     z-index: 1000;
     transition: ease-in-out .25s;
-    a{
-        width: 100%;
-        background: #fff;
-        font-size: 3rem;
-        text-decoration: none;
-        color: dodgerblue;
-        padding: 1.5rem 2rem;
-        transition: ease-in-out .15s;
-        &:hover{
-            background: #f2f2f2;
-            color: rgb(27, 111, 195);
-            
+    .logo-movil{
+        margin-top: 90px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 70px;
+        height: 50px;
+        img{
+            height: 100%;
         }
     }
+    .hamburguesa{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 240px;
+        a.link{
+            width: 100%;
+            background: #fff;
+            font-size: 1.5rem;
+            text-align: center;
+            text-decoration: none;
+            color: $celeste;
+            padding: 1.5rem 2rem;
+            transition: ease-in-out .15s;
+            &:hover{
+                background: $gris-claro;
+            }
+        }
+    }
+
     .salir{
         position: absolute;
         bottom: 0;
         left: 0;
         padding: 2rem;
-        background: lightgray;
+        background: $gris-claro;
         width: 100%;
-        font-size: 2rem;
+        font-size: 1.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
         transition: ease-in-out .15s;
         &:hover{
-            background: rgb(182, 182, 182);
+            background:$gris-oscuro;
         }
     }
 }

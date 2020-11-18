@@ -54,7 +54,7 @@ p {
   font-weight: 400;
 }
 
-nav.escritorio {
+.escritorio {
   width: 100%;
   height: 80px;
   padding-left: 10%;
@@ -75,12 +75,12 @@ nav.escritorio {
   top: 0;
 }
 
-nav.escritorio .logo-escritorio {
+.escritorio .logo-escritorio {
   height: 100%;
   cursor: pointer;
 }
 
-nav.escritorio .logo-escritorio a {
+.escritorio .logo-escritorio a {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,11 +93,11 @@ nav.escritorio .logo-escritorio a {
           justify-content: center;
 }
 
-nav.escritorio .logo-escritorio a img {
+.escritorio .logo-escritorio a img {
   height: 50%;
 }
 
-nav.escritorio .enlaces {
+.escritorio .enlaces {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,7 +109,7 @@ nav.escritorio .enlaces {
           align-items: space-around;
 }
 
-nav.escritorio .enlaces a {
+.escritorio .enlaces a {
   text-decoration: none;
   padding: 1rem 2rem;
   color: #242424;
@@ -117,7 +117,7 @@ nav.escritorio .enlaces a {
   transition: ease-in-out .15s;
 }
 
-nav.escritorio .enlaces a:hover {
+.escritorio .enlaces a:hover {
   color: #3eb1c8;
 }
 
@@ -134,7 +134,7 @@ nav.escritorio .enlaces a:hover {
 
 .movil {
   width: 80%;
-  max-width: 600px;
+  max-width: 375px;
   height: 100vh;
   background: #fff;
   position: fixed;
@@ -156,20 +156,46 @@ nav.escritorio .enlaces a:hover {
   transition: ease-in-out .25s;
 }
 
-.movil a {
+.movil .logo-movil {
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  height: 50px;
+}
+
+.movil .logo-movil img {
+  height: 100%;
+}
+
+.movil .hamburguesa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 240px;
+}
+
+.movil .hamburguesa a.link {
   width: 100%;
   background: #fff;
-  font-size: 3rem;
+  font-size: 1.5rem;
+  text-align: center;
   text-decoration: none;
-  color: dodgerblue;
+  color: #3eb1c8;
   padding: 1.5rem 2rem;
   -webkit-transition: ease-in-out .15s;
   transition: ease-in-out .15s;
 }
 
-.movil a:hover {
-  background: #f2f2f2;
-  color: #1b6fc3;
+.movil .hamburguesa a.link:hover {
+  background: #eaeaea;
 }
 
 .movil .salir {
@@ -177,9 +203,9 @@ nav.escritorio .enlaces a:hover {
   bottom: 0;
   left: 0;
   padding: 2rem;
-  background: lightgray;
+  background: #eaeaea;
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,7 +221,7 @@ nav.escritorio .enlaces a:hover {
 }
 
 .movil .salir:hover {
-  background: #b6b6b6;
+  background: #bfbfbf;
 }
 
 .btnMenu {
@@ -269,7 +295,7 @@ p {
   font-weight: 400;
 }
 
-header {
+header.header {
   width: 100%;
   height: 100vh;
   padding-top: 80px;
@@ -288,7 +314,7 @@ header {
   color: #ffffff;
 }
 
-header .texto-header {
+header.header .texto-header {
   height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,26 +331,23 @@ header .texto-header {
           align-items: flex-start;
 }
 
-header .texto-header p#hola-header {
-  font-size: 25px;
-  margin-bottom: 0;
+header.header .texto-header p#hola-header {
+  font-size: 1.5625em;
 }
 
-header .texto-header h1#nombre-header {
-  font-size: 55px;
-  margin-top: -15px;
-  margin-bottom: -5px;
+header.header .texto-header h1#nombre-header {
+  font-size: 3.4375em;
 }
 
-header .texto-header p#especialidad-header {
-  font-size: 18px;
+header.header .texto-header p#especialidad-header {
+  font-size: 1.125em;
   margin-bottom: 30px;
 }
 
-header .texto-header button#btn-header {
+header.header .texto-header button#btn-header {
   color: #ffffff;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125em;
   background: #3eb1c8;
   border: none;
   padding: 15px 60px;
@@ -333,14 +356,14 @@ header .texto-header button#btn-header {
   cursor: pointer;
 }
 
-header .texto-header button#btn-header:hover {
+header.header .texto-header button#btn-header:hover {
   background: #ffffff;
   color: #3eb1c8;
   -webkit-transition: ease-in-out .25s;
   transition: ease-in-out .25s;
 }
 
-header .img-header {
+header.header .img-header {
   height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,8 +376,80 @@ header .img-header {
           align-items: flex-end;
 }
 
-header .img-header img {
+header.header .img-header img {
   height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  header.header {
+    font-size: 14px;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header.header :nth-child(1) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  header.header :nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  header.header .texto-header {
+    height: 100%;
+    width: 95%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header.header .texto-header #hola-header {
+    text-align: center;
+    display: none;
+  }
+  header.header .texto-header #nombre-header {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  header.header .img-header {
+    height: auto;
+    margin-bottom: 30px;
+  }
+  header.header .img-header img {
+    max-width: 450px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  header.header {
+    font-size: 12px;
+  }
+  header.header .texto-header h1#nombre-header {
+    font-size: 3em;
+  }
+  header.header .img-header img {
+    max-width: 340px;
+    height: auto;
+  }
 }
 
 * {
@@ -406,8 +501,9 @@ section.proyectos-destacados-home {
 }
 
 section.proyectos-destacados-home h2 {
-  font-size: 55px;
+  font-size: 3.4375em;
   margin-bottom: 70px;
+  text-align: center;
 }
 
 section.proyectos-destacados-home .tarjetas {
@@ -456,12 +552,12 @@ section.proyectos-destacados-home .tarjetas .tarjeta-proyecto .texto-proyecto {
 }
 
 section.proyectos-destacados-home .tarjetas .tarjeta-proyecto .texto-proyecto h4 {
-  font-size: 24px;
+  font-size: 1.5em;
   text-align: center;
 }
 
 section.proyectos-destacados-home .tarjetas .tarjeta-proyecto .texto-proyecto p {
-  font-size: 16px;
+  font-size: 1em;
   text-align: center;
 }
 
@@ -471,7 +567,7 @@ section.proyectos-destacados-home .tarjetas .tarjeta-proyecto .texto-proyecto bu
   border: none;
   border-radius: 15px;
   padding: 10px 40px;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 700;
   cursor: pointer;
 }
@@ -498,6 +594,66 @@ section.proyectos-destacados-home button.mas-proyectos:hover {
   background: #242424;
   -webkit-transition: ease-in-out .25s;
   transition: ease-in-out .25s;
+}
+
+@media screen and (max-width: 1024px) {
+  section.proyectos-destacados-home {
+    font-size: 14px;
+    height: 1000px;
+    padding-left: 5%;
+    padding-right: 5%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  section.proyectos-destacados-home h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  section.proyectos-destacados-home .tarjetas {
+    height: auto;
+  }
+  section.proyectos-destacados-home .tarjetas .tarjeta-proyecto {
+    height: 600px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  section.proyectos-destacados-home .tarjetas .tarjeta-proyecto img.img-proyecto {
+    border-radius: 25px 25px 0 0;
+  }
+  section.proyectos-destacados-home .tarjetas .tarjeta-proyecto .texto-proyecto h4 {
+    font-size: 2.3em;
+  }
+  section.proyectos-destacados-home .tarjetas .tarjeta-proyecto .texto-proyecto p {
+    font-size: 1.3em;
+  }
+  section.proyectos-destacados-home button.mas-proyectos {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  section.proyectos-destacados-home {
+    height: 1300px;
+  }
+  section.proyectos-destacados-home h2 {
+    font-size: 2.8em;
+  }
+  section.proyectos-destacados-home .tarjetas {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  section.proyectos-destacados-home .tarjetas .tarjeta-proyecto {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  section.proyectos-destacados-home {
+    font-size: 12px;
+  }
 }
 
 * {
@@ -564,8 +720,9 @@ section.contactame .caja-form {
 }
 
 section.contactame .caja-form h3 {
-  font-size: 40px;
+  font-size: 2.5em;
   margin-top: 50px;
+  text-align: center;
 }
 
 section.contactame .caja-form .contacto-form {
@@ -663,7 +820,7 @@ section.contactame .caja-form .contacto-form .formulario form input.enviar-datos
   border-radius: 15px;
   padding: 10px 40px;
   margin-top: 30px;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 700;
   cursor: pointer;
 }
@@ -672,6 +829,39 @@ section.contactame .caja-form .contacto-form .formulario form input.enviar-datos
   background: #242424;
   -webkit-transition: ease-in-out .25s;
   transition: ease-in-out .25s;
+}
+
+@media screen and (max-width: 768px) {
+  section.contactame {
+    height: 975px;
+  }
+  section.contactame .caja-form {
+    width: 90%;
+  }
+  section.contactame .caja-form h3 {
+    margin-top: 40px;
+  }
+  section.contactame .caja-form .contacto-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.contactame .caja-form .contacto-form .logo-contacto {
+    height: 250px;
+  }
+  section.contactame .caja-form .contacto-form .logo-contacto img {
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  section.contactame {
+    font-size: 14px;
+  }
 }
 
 * {
