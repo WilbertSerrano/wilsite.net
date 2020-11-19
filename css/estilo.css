@@ -538,27 +538,38 @@ section.proyectos-destacados-home h2 {
 
 section.proyectos-destacados-home .tarjetas {
   width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: auto;
 }
 
 section.proyectos-destacados-home .tarjetas .tarjeta-proyecto {
-  width: 100%;
-  height: 325px;
+  width: 50%;
+  height: 320px;
   background: #ffffff;
   border-radius: 25px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 section.proyectos-destacados-home .tarjetas .tarjeta-proyecto img.img-proyecto {
-  width: 100%;
+  width: 50%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -566,6 +577,8 @@ section.proyectos-destacados-home .tarjetas .tarjeta-proyecto img.img-proyecto {
 }
 
 section.proyectos-destacados-home .tarjetas .tarjeta-proyecto .texto-proyecto {
+  height: 90%;
+  width: 50%;
   padding-left: 20px;
   padding-right: 20px;
   display: -webkit-box;
@@ -617,7 +630,7 @@ section.proyectos-destacados-home button.mas-proyectos {
   border: none;
   border-radius: 15px;
   padding: 10px 40px;
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 700;
   cursor: pointer;
 }
@@ -644,16 +657,37 @@ section.proyectos-destacados-home button.mas-proyectos:hover {
   }
   section.proyectos-destacados-home .tarjetas {
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   section.proyectos-destacados-home .tarjetas .tarjeta-proyecto {
     height: 600px;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    max-width: 370px;
+    margin-right: 10px;
+    margin-left: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   section.proyectos-destacados-home .tarjetas .tarjeta-proyecto img.img-proyecto {
     border-radius: 25px 25px 0 0;
+    width: 100%;
+    height: 300px;
+  }
+  section.proyectos-destacados-home .tarjetas .tarjeta-proyecto .texto-proyecto {
+    width: 100%;
+    height: 300px;
   }
   section.proyectos-destacados-home .tarjetas .tarjeta-proyecto .texto-proyecto h4 {
     font-size: 2.3em;
@@ -668,24 +702,45 @@ section.proyectos-destacados-home button.mas-proyectos:hover {
 
 @media screen and (max-width: 675px) {
   section.proyectos-destacados-home {
-    height: 1300px;
+    height: 1500px;
   }
   section.proyectos-destacados-home h2 {
     font-size: 2.8em;
   }
   section.proyectos-destacados-home .tarjetas {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: auto;
   }
   section.proyectos-destacados-home .tarjetas .tarjeta-proyecto {
-    height: 500px;
+    max-width: 100%;
+    min-width: 430px;
+    height: 600px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  section.proyectos-destacados-home .tarjetas .tarjeta-proyecto img {
+    height: 300px;
+  }
+  section.proyectos-destacados-home .tarjetas .tarjeta-proyecto .texto-proyecto {
+    height: 300px;
+  }
+  section.proyectos-destacados-home button.mas-proyectos {
+    margin-top: -20px;
   }
 }
 
 @media screen and (max-width: 450px) {
   section.proyectos-destacados-home {
     font-size: 12px;
+  }
+  section.proyectos-destacados-home .tarjetas .tarjeta-proyecto {
+    width: 100%;
+    max-width: 350px;
+    min-width: 300px;
   }
 }
 
