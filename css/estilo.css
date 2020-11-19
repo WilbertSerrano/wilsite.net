@@ -150,22 +150,74 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: none;
   z-index: 1000;
   -webkit-transition: ease-in-out .25s;
   transition: ease-in-out .25s;
+  /*.salir{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 2rem;
+        background: $gris-claro;
+        width: 100%;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: ease-in-out .15s;
+        &:hover{
+            background:$gris-oscuro;
+        }
+    }*/
 }
 
-.movil .logo-movil {
-  margin-top: 90px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 70px;
-  height: 50px;
+.movil .top-menu {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  background-color: #3eb1c8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.movil .logo-movil img {
+.movil .top-menu .logo-movil {
+  height: 70px;
+}
+
+.movil .top-menu .logo-movil img {
   height: 100%;
+}
+
+.movil .top-menu .salir {
+  height: auto;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.movil .top-menu .salir i {
+  font-size: 2rem;
+  color: #ffffff;
 }
 
 .movil .hamburguesa {
@@ -179,49 +231,22 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 240px;
 }
 
 .movil .hamburguesa a.link {
   width: 100%;
   background: #fff;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   text-decoration: none;
   color: #3eb1c8;
-  padding: 1.5rem 2rem;
+  padding: 1.8rem 2rem;
   -webkit-transition: ease-in-out .15s;
   transition: ease-in-out .15s;
 }
 
 .movil .hamburguesa a.link:hover {
   background: #eaeaea;
-}
-
-.movil .salir {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 2rem;
-  background: #eaeaea;
-  width: 100%;
-  font-size: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-  -webkit-transition: ease-in-out .15s;
-  transition: ease-in-out .15s;
-}
-
-.movil .salir:hover {
-  background: #bfbfbf;
 }
 
 .btnMenu {
