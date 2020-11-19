@@ -512,6 +512,7 @@ p {
 section.proyectos-destacados-home {
   padding-left: 10%;
   padding-right: 10%;
+  width: 100%;
   height: 700px;
   background: #eaeaea;
   display: -webkit-box;
@@ -536,6 +537,7 @@ section.proyectos-destacados-home h2 {
 }
 
 section.proyectos-destacados-home .tarjetas {
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -545,6 +547,7 @@ section.proyectos-destacados-home .tarjetas {
 }
 
 section.proyectos-destacados-home .tarjetas .tarjeta-proyecto {
+  width: 100%;
   height: 325px;
   background: #ffffff;
   border-radius: 25px;

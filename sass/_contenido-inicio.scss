@@ -3,6 +3,7 @@
 section.proyectos-destacados-home{
     padding-left: 10%;
     padding-right: 10%;
+    width: 100%;
     height: 700px;
     background: $gris-claro;
     display: flex;
@@ -15,11 +16,13 @@ section.proyectos-destacados-home{
         text-align: center;
     }
     .tarjetas{
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
         height: auto;
         .tarjeta-proyecto{
+            width: 100%;
             height: 325px;
             background: $blanco;
             border-radius: 25px;
