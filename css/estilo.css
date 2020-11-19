@@ -221,6 +221,7 @@ p {
 }
 
 .movil .hamburguesa {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,10 +359,13 @@ header.header .texto-header {
 
 header.header .texto-header p#hola-header {
   font-size: 1.5625em;
+  margin-bottom: 0px;
 }
 
 header.header .texto-header h1#nombre-header {
   font-size: 3.4375em;
+  margin-top: -15px;
+  margin-bottom: -5px;
 }
 
 header.header .texto-header p#especialidad-header {

@@ -19,9 +19,12 @@ header.header{
         align-items: flex-start;
         p#hola-header{
             font-size: 1.5625em;
+            margin-bottom: 0px;
         }
         h1#nombre-header{
             font-size: 3.4375em;
+            margin-top: -15px;
+            margin-bottom: -5px;
         }
         p#especialidad-header{
             font-size: 1.125em;
