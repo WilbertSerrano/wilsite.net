@@ -13,6 +13,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
+            // https://dashboard.emailjs.com/admin/integration
             emailjs.init('user_UNFjrU0EbrTk6WDQXTCfx');
         })();
     </script>
@@ -20,12 +21,14 @@
         window.onload = function() {
             document.getElementById('formulario').addEventListener('submit', function(event) {
                 event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps
                 emailjs.sendForm('service_ff5436h', 'template_m0ias2f', this)
                     .then(function() {
-                        console.log('Enviado!');
+                        console.log('SUCCESS!');
                     }, function(error) {
-                        console.log('Hubo un problema...', error);
+                        console.log('FAILED...', error);
                     });
             });
         }
@@ -109,6 +112,7 @@
                 </div>
                 <div class="formulario" id="formulario">
                     <form>
+                        <input type="hidden" name="contact_number">
                         <div class="campo">
                             <label for="nombre"><strong>Nombre completo:</strong></label>
                             <input type="text" id="nombre" name="nombre" placeholder="Escribir aquí..." required>
