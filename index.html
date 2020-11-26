@@ -13,28 +13,19 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            // https://dashboard.emailjs.com/admin/integration
             emailjs.init('user_UNFjrU0EbrTk6WDQXTCfx');
         })();
     </script>
     <script type="text/javascript">
-<<<<<<< HEAD
-        window.onload = function enviarDatos() {
-            document.getElementById('formulario-de-contacto').addEventListener('submit', function(event) {
-=======
         window.onload = function() {
             document.getElementById('formulario').addEventListener('submit', function(event) {
->>>>>>> parent of da05bd0... Prueba Formulario 2
                 event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps
                 emailjs.sendForm('service_ff5436h', 'template_m0ias2f', this)
                     .then(function() {
-                        alert('Se enviaron los datos correctamente');
-                        console.log('Se enviaron los datos correctamente');
+                        console.log('Enviado!');
                     }, function(error) {
-                        console.log('No se han enviado los datos', error);
+                        console.log('Hubo un problema...', error);
                     });
             });
         }
@@ -102,7 +93,7 @@
                 <img src="img/example.jpg" alt="" class="img-proyecto">
                 <div class="texto-proyecto" id="texto-proyecto">
                     <h4>MAKETA</h4>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+                    <p>Diseño de sitio web para agencia de diseño de interiores, la cual tiene más de 10 años de experiencia en su sector.</p>
                     <button class="ver-proyecto">Ver</button>
                 </div>
             </div>
@@ -117,7 +108,7 @@
                     <img src="img/logo-negro.svg" alt="">
                 </div>
                 <div class="formulario" id="formulario">
-                    <form action="">
+                    <form>
                         <div class="campo">
                             <label for="nombre"><strong>Nombre completo:</strong></label>
                             <input type="text" id="nombre" name="nombre" placeholder="Escribir aquí..." required>
@@ -127,14 +118,14 @@
                             <input type="email" id="correo" name="correo" placeholder="Escribir aquí..." required>
                         </div>
                         <div class="campo">
-                            <label for="nombre_empresa"><strong>Nombre de la empresa:</strong></label>
-                            <input type="text" id="nombre_empresa" name="nombre_empresa" placeholder="Escribir aquí..." required>
+                            <label for="nombre-empresa"><strong>Nombre de la empresa:</strong></label>
+                            <input type="text" id="nombre-empresa" name="nombre-empresa" placeholder="Escribir aquí..." required>
                         </div>
                         <div class="campo">
                             <label for="descripcion"><strong>Descripción del proyecto:</strong></label>
                             <textarea name="descripcion" id="descripcion" placeholder="Escriba aquí..." required></textarea>
                         </div>
-                        <input type="submit" value="Enviar" class="enviar-datos" onclick="function enviarDatos()">
+                        <input type="submit" value="Enviar" class="enviar-datos">
                     </form>
                 </div>
             </div>
