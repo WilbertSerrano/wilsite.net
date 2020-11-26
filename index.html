@@ -18,8 +18,13 @@
         })();
     </script>
     <script type="text/javascript">
+<<<<<<< HEAD
         window.onload = function enviarDatos() {
             document.getElementById('formulario-de-contacto').addEventListener('submit', function(event) {
+=======
+        window.onload = function() {
+            document.getElementById('formulario').addEventListener('submit', function(event) {
+>>>>>>> parent of da05bd0... Prueba Formulario 2
                 event.preventDefault();
                 // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
@@ -112,8 +117,7 @@
                     <img src="img/logo-negro.svg" alt="">
                 </div>
                 <div class="formulario" id="formulario">
-                    <form id="formulario-de-contacto">
-                        <input type="hidden" name="contact_number">
+                    <form action="">
                         <div class="campo">
                             <label for="nombre"><strong>Nombre completo:</strong></label>
                             <input type="text" id="nombre" name="nombre" placeholder="Escribir aquí..." required>
