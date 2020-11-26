@@ -18,7 +18,7 @@
         })();
     </script>
     <script type="text/javascript">
-        window.onload = function() {
+        window.onload = function enviarDatos() {
             document.getElementById('formulario-de-contacto').addEventListener('submit', function(event) {
                 event.preventDefault();
                 // generate a five digit number for the contact_number variable
@@ -129,7 +129,7 @@
                             <label for="descripcion"><strong>Descripción del proyecto:</strong></label>
                             <textarea name="descripción" id="descripcion" placeholder="Escriba aquí..."></textarea>
                         </div>
-                        <input type="submit" value="Enviar" class="enviar-datos">
+                        <input type="submit" value="Enviar" class="enviar-datos" onclick="function enviarDatos()">
                     </form>
                 </div>
             </div>
