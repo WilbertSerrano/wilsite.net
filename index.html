@@ -20,12 +20,13 @@
     <script type="text/javascript">
         window.onload = function enviarDatos() {
             document.getElementById('formulario-de-contacto').addEventListener('submit', function(event) {
-                //event.preventDefault();
+                event.preventDefault();
                 // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps
                 emailjs.sendForm('service_ff5436h', 'template_m0ias2f', this)
                     .then(function() {
+                        alert('Se enviaron los datos correctamente');
                         console.log('Se enviaron los datos correctamente');
                     }, function(error) {
                         console.log('No se han enviado los datos', error);
