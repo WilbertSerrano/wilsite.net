@@ -25,6 +25,7 @@
                 emailjs.sendForm('service_ff5436h', 'template_m0ias2f', this)
                     .then(function() {
                         console.log('SUCCESS!');
+                        alert('Su mensaje ha sido enviado.');
                     }, function(error) {
                         console.log('FAILED...', error);
                     });
@@ -36,7 +37,7 @@
 <body>
     <nav class="escritorio">
         <div class="logo-escritorio" id="logo-escritorio">
-            <a href="www.wilsite.net" target="_blank"><img src="img/logo-horizontal-negro.svg" alt=""></a>
+            <a href="https://www.wilsite.net"><img src="img/logo-horizontal-negro.svg" alt=""></a>
         </div>
         <div class="enlaces" id="enlaces">
             <a href="#">Inicio</a>
@@ -109,7 +110,7 @@
                     <img src="img/logo-negro.svg" alt="">
                 </div>
                 <div class="formulario" id="formulario">
-                    <form id="formularioEmailJS">
+                    <form name="formulario" id="formularioEmailJS">
                         <input type="hidden" name="contact_number">
                         <div class="campo">
                             <label for="nombre"><strong>Nombre completo:</strong></label>
@@ -127,7 +128,7 @@
                             <label for="descripcion"><strong>Descripción del proyecto:</strong></label>
                             <textarea name="descripcion" id="descripcion" placeholder="Escriba aquí..." required=""></textarea>
                         </div>
-                        <input type="submit" value="Enviar" class="enviar-datos">
+                        <input type="submit" value="Enviar" class="enviar-datos" id="enviar-datos">
                     </form>
                 </div>
             </div>
