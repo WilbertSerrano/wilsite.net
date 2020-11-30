@@ -17,14 +17,14 @@
         })();
     </script>
     <script type="text/javascript">
-        window.onclick = function() {
+        window.onload = function() {
             document.getElementById('formularioEmailJS').addEventListener('submit', function(event) {
                 event.preventDefault();
                 // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
                 emailjs.sendForm('service_ff5436h', 'template_m0ias2f', this)
                     .then(function() {
-                        console.log('SUCCESS!');
+                        //console.log('SUCCESS!');
                         alert('Su mensaje ha sido enviado.');
                     }, function(error) {
                         console.log('FAILED...', error);
