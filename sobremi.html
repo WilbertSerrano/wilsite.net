@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wilsite - Diseñador Web</title>
+    <title>Sobre Mi</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.svg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
@@ -34,9 +34,6 @@
     </script>
 </head>
 <body>
-    <div class="splash">
-        <img src="./img/logoblanco.png" alt="" class="fade-in">
-    </div>
     <nav class="escritorio">
         <div class="logo-escritorio" id="logo-escritorio">
             <a href="https://www.wilsite.net"><img src="img/logo-horizontal-negro.svg" alt=""></a>
@@ -68,41 +65,21 @@
 
     <div class="btnMenu" id="btnMenu"><i class="fas fa-bars"></i></div>
 
-    <header class="header">
-        <div class="texto-header" id="texto-header">
-            <p id="hola-header">Hola, soy</p>
-            <br>
-            <h1 id="nombre-header">Wilbert Serrano</h1>
-            <br>
-            <p id="especialidad-header">Me especializo en Desarrollo Front End.</p>
-            <br>
-            <button id="btn-header">Sobre Mí</button>
+    <section class="sobre-mi">
+        <div class="foto-sobre-mi">
+            <img src="./img/img-header.png" alt="">
         </div>
-        <div class="img-header" id="img-header">
-            <img src="img/img-header.png" alt="">
+        <div class="info-sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Me especializo en crear sitios web con un diseño minimalista y responsive para que te comuniques de manera eficiente con tus clientes.</p>
+            
+            <a href="https://drive.google.com/file/d/1bxyh872O13ZndqMcUv05Bb1MI7KprO62/view?usp=sharing" target="_blank"><button>Descargar CV</button></a>
         </div>
-    </header>
-    <section class="proyectos-destacados-home" id="proyectos-destacados-home">
-        <h2>Proyectos Destacados</h2>
-        <div class="tarjetas">
-            <div class="tarjeta-proyecto" id="tarjeta-proyecto">
-                <img src="img/cover_dalli.jpg" alt="" class="img-proyecto">
-                <div class="texto-proyecto" id="texto-proyecto">
-                    <h4>App Librería Dallí</h4>
-                    <p>Diseño de aplicación para una librería que atiende en línea y es dirigida a los estudiantes de diseño gráfico.</p>
-                    <button class="ver-proyecto">Ver</button>
-                </div>
-            </div>
-            <div class="tarjeta-proyecto" id="tarjeta-proyecto">
-                <img src="img/example.jpg" alt="" class="img-proyecto">
-                <div class="texto-proyecto" id="texto-proyecto">
-                    <h4>MAKETA</h4>
-                    <p>Diseño de sitio web para agencia de diseño de interiores, la cual tiene más de 10 años de experiencia en su sector.</p>
-                    <button class="ver-proyecto">Ver</button>
-                </div>
-            </div>
-        </div>
-        <button class="mas-proyectos" id="mas-proyectos">Más Proyectos</button>
+        
+    </section>
+
+    <section class="habilidades">
+        
     </section>
     <section class="contactame" id="contactame">
         <div class="caja-form" id="caja-form">
@@ -136,6 +113,7 @@
             </div>
         </div>
     </section>
+
     <footer>
         <div class="redes" id="redes">
             <a href="https://www.linkedin.com/in/wilbert-serrano/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -145,6 +123,5 @@
     </footer>
 
     <script src="js/menu.js"></script>
-    <script src="js/splash.js"></script>
 </body>
 </html>

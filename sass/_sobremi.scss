@@ -1,0 +1,64 @@
+@import 'generales', 'variables';
+
+body{
+    background: $negro;
+}
+
+.sobre-mi{
+    width: 100%;
+    height: 800px;
+    padding-top: 90px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .foto-sobre-mi{
+        width: 50%;
+        height: 550px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        img{
+            height: 100%;
+        }
+    }
+    .info-sobre-mi{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        h2{
+            color: $blanco;
+            font-size: 42px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        p{
+            color: $blanco;
+            font-size: 24px;
+            width: 100%;
+            text-align: justify;
+            padding-bottom: 50px;
+        }
+        button{
+            color: $blanco;
+            font-weight: $bold;
+            font-size: 1.125em;
+            background: $celeste;
+            border: none;
+            padding: 15px 60px;
+            border-radius: 15px;
+            margin-bottom: 10%;
+            cursor: pointer;
+            &:hover{
+                background: $blanco;
+                color: $celeste;
+                transition: ease-in-out .25s;
+            }
+        }
+    }
+
+}
