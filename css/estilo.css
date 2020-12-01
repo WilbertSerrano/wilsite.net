@@ -907,6 +907,8 @@ section.contactame .caja-form .contacto-form .logo-contacto {
 
 section.contactame .caja-form .contacto-form .logo-contacto img {
   height: 50%;
+  padding-right: 80px;
+  margin-bottom: 50px;
 }
 
 section.contactame .caja-form .contacto-form .formulario {
@@ -990,15 +992,17 @@ section.contactame .caja-form .contacto-form .formulario form input.enviar-datos
   transition: ease-in-out .25s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   section.contactame {
-    height: 1175px;
+    height: 1105px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   section.contactame .caja-form {
     width: 90%;
   }
   section.contactame .caja-form h3 {
-    margin-top: 40px;
+    margin-top: 60px;
   }
   section.contactame .caja-form .contacto-form {
     display: -webkit-box;
@@ -1014,6 +1018,8 @@ section.contactame .caja-form .contacto-form .formulario form input.enviar-datos
   }
   section.contactame .caja-form .contacto-form .logo-contacto img {
     height: 70%;
+    padding-right: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -1074,9 +1080,10 @@ footer .redes i {
 }
 
 .proyectos-portafolio {
-  padding-top: 350px;
+  padding-top: 0;
   width: 100%;
-  height: auto;
+  height: 1300px;
+  background: #242424;
   padding-left: 10%;
   padding-right: 10%;
   display: -webkit-box;
@@ -1104,7 +1111,8 @@ footer .redes i {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  grid-gap: 20px;
+  justify-items: center;
+  grid-gap: 30px;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
@@ -1171,12 +1179,48 @@ footer .redes i {
   transition: ease-in-out .25s;
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 1024px) {
+  .proyectos-portafolio {
+    height: 1650px;
+  }
+  .proyectos-portafolio h2 {
+    padding-bottom: 70px;
+  }
   .proyectos-portafolio .tarjetas-portafolio {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: (3)[1fr];
-        grid-template-rows: repeat(1fr, 3);
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .proyectos-portafolio {
+    height: 3150px;
+    padding-top: 50px;
+    font-size: 14px;
+  }
+  .proyectos-portafolio h2 {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .proyectos-portafolio .tarjetas-portafolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .proyectos-portafolio .tarjetas-portafolio .tarjeta-proyecto-portafolio {
+    margin-bottom: 20px;
   }
 }
 
@@ -1208,11 +1252,8 @@ p {
   font-weight: 400;
 }
 
-body {
-  background: #242424;
-}
-
 .sobre-mi {
+  background: #242424;
   width: 100%;
   height: 100vh;
   padding-top: 80px;

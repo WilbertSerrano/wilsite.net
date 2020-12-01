@@ -34,6 +34,8 @@ section.contactame{
                 align-items: center;
                 img{
                     height: 50%;
+                    padding-right: 80px;
+                    margin-bottom: 50px;
                 }
             }
             .formulario{
@@ -90,13 +92,15 @@ section.contactame{
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
     section.contactame{
-        height: 1175px;
+        height: 1105px;
+        padding-top: 50px;
+        padding-bottom: 50px;
         .caja-form{
             width: 90%;
             h3{
-                margin-top: 40px;
+                margin-top: 60px;
             }
             .contacto-form{
                 display: flex;
@@ -105,6 +109,8 @@ section.contactame{
                     height: 250px;
                     img{
                         height: 70%;
+                        padding-right: 0;
+                        margin-bottom: 0;
                     }
                 }
 
