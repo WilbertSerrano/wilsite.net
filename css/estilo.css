@@ -1131,6 +1131,7 @@ footer .redes i {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 25px 25px 0 0;
+  background: #3eb1c8;
 }
 
 .proyectos-portafolio .tarjetas-portafolio .tarjeta-proyecto-portafolio .texto-proyecto-portafolio {
@@ -1395,6 +1396,10 @@ p {
 @media screen and (max-width: 475px) {
   .sobre-mi {
     font-size: 12px;
+    padding-top: 80px;
+  }
+  .sobre-mi .info-sobre-mi {
+    width: 80%;
   }
   .sobre-mi .foto-sobre-mi img {
     max-width: 340px;

@@ -102,6 +102,10 @@
 @media screen and (max-width: 475px){
     .sobre-mi{
         font-size: 12px;
+        padding-top: 80px;
+        .info-sobre-mi{
+            width: 80%;
+        }
         .foto-sobre-mi{
             img{
                 max-width: 340px;
