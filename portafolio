@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mi</title>
+    <title>Portafolio - Wilsite</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.svg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
@@ -64,6 +64,70 @@
     </nav>
 
     <div class="btnMenu" id="btnMenu"><i class="fas fa-bars"></i></div>
+
+    <section class="proyectos-portafolio" id="proyectos-portafolio">
+        <h2>Mi Portafolio</h2>
+        <div class="tarjetas-portafolio">
+            <div class="tarjeta-proyecto-portafolio" id="tarjeta-proyecto-portafolio">
+                <img src="img/cover_dalli.jpg" alt="" class="img-proyecto">
+                <div class="texto-proyecto-portafolio" id="texto-proyecto-portafolio">
+                    <h4>App Librería Dallí</h4>
+                    <p>Diseño de aplicación para una librería que atiende en línea y es dirigida a los estudiantes de diseño gráfico.</p>
+                    <a href="https://www.behance.net/gallery/107823847/Libreria-Dalli-App" target="_blank"><button class="ver-proyecto-individual">Ver</button></a>
+                </div>
+            </div>
+            <div class="tarjeta-proyecto-portafolio" id="tarjeta-proyecto-portafolio">
+                <img src="img/cover_maketa.jpg" alt="" class="img-proyecto">
+                <div class="texto-proyecto-portafolio" id="texto-proyecto-portafolio">
+                    <h4>MAKETA</h4>
+                    <p>Diseño de sitio web para agencia de diseño de interiores, la cual tiene más de 10 años de experiencia en su sector.</p>
+                    <a href="https://www.behance.net/gallery/108795785/MAKETA-Diseno-Web" target="_blank"><button class="ver-proyecto-individual">Ver</button></a>
+                </div>
+            </div>
+            <div class="tarjeta-proyecto-portafolio" id="tarjeta-proyecto-portafolio">
+                <img src="img/cover_medicos.jpg" alt="" class="img-proyecto">
+                <div class="texto-proyecto-portafolio" id="texto-proyecto-portafolio">
+                    <h4>Consultorio Médico</h4>
+                    <p>Diseño web basado en un consultorio médico que ofrece visitas médicas a domicilio, incluso de especialidades.</p>
+                    <a href="https://www.behance.net/gallery/108795923/Diseno-Web-para-Consultorio-Mdico" target="_blank"><button class="ver-proyecto-individual">Ver</button></a>
+                </div>
+            </div>
+            <div class="tarjeta-proyecto-portafolio" id="tarjeta-proyecto-portafolio">
+                <img src="img/cover_agenciabienesraices.jpg" alt="" class="img-proyecto">
+                <div class="texto-proyecto-portafolio" id="texto-proyecto-portafolio">
+                    <h4>Agencia de Bienes Raíces</h4>
+                    <p>Diseño web basado en una agencia de bienes raíces, el cual muestra cada una de las propiedades en venta.</p>
+                    <a href="https://www.behance.net/gallery/108859415/Diseno-Web-para-Agencia-de-Bienes-Raices" target="_blank"><button class="ver-proyecto-individual">Ver</button></a>
+                </div>
+            </div>
+            <div class="tarjeta-proyecto-portafolio" id="tarjeta-proyecto-portafolio">
+                <img src="img/cover_restaurantecomidachina.jpg" alt="" class="img-proyecto">
+                <div class="texto-proyecto-portafolio" id="texto-proyecto-portafolio">
+                    <h4>Restaurante de Comida China</h4>
+                    <p>Diseño web basado en un restaurante de comida china, donde se muestra la variedad de platillos que ofrecen.</p>
+                    <a href="./proyectos/en-construccion.html" target="_blank"><button class="ver-proyecto-individual">Ver</button></a>
+                </div>
+            </div>
+            <!--
+            <div class="tarjeta-proyecto-portafolio" id="tarjeta-proyecto-portafolio">
+                <img src="img/cover_dalli.jpg" alt="" class="img-proyecto">
+                <div class="texto-proyecto-portafolio" id="texto-proyecto-portafolio">
+                    <h4>Zone Fitness Gym</h4>
+                    <p>Diseño de aplicación para una librería que atiende en línea y es dirigida a los estudiantes de diseño gráfico.</p>
+                    <a href="./proyectos/en-construccion.html"><button class="ver-proyecto-individual">Ver</button></a>
+                </div>
+            </div>
+            -->
+            <div class="tarjeta-proyecto-portafolio" id="tarjeta-proyecto-portafolio">
+                <img src="img/cover_cargando.jpg" alt="" class="img-proyecto">
+                <div class="texto-proyecto-portafolio" id="texto-proyecto-portafolio">
+                    <h4>Próximamente nuevos proyectos</h4>
+                    <p>Se vienen algunos proyectos más, los cuales iré agregando poco a poco a esta sección de mi sitio web. Esto a penas comienza...</p>
+                    <!--<a href="./proyectos/en-construccion.html"><button class="ver-proyecto-individual">Ver</button></a>-->
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="contactame" id="contactame">
         <div class="caja-form" id="caja-form">
