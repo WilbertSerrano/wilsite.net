@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Wilsite</title>
+    <title>Wilsite - Diseñador Web</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.svg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
@@ -34,15 +34,18 @@
     </script>
 </head>
 <body>
+    <div class="splash">
+        <img src="./img/logoblanco.png" alt="" class="fade-in">
+    </div>
     <nav class="escritorio">
         <div class="logo-escritorio" id="logo-escritorio">
             <a href="https://www.wilsite.net"><img src="img/logo-horizontal-negro.svg" alt=""></a>
         </div>
         <div class="enlaces" id="enlaces">
             <a href="https://www.wilsite.net">Inicio</a>
-            <a href="portafolio">Portafolio</a>
-            <a href="sobremi">Sobre mí</a>
-            <a href="contacto">Contacto</a>
+            <a href="portafolio.html">Portafolio</a>
+            <a href="sobremi.html">Sobre mí</a>
+            <a href="contacto.html">Contacto</a>
         </div>
     </nav>
 
@@ -57,78 +60,50 @@
         </div>
         <div class="hamburguesa" id="hamburguesa">
             <a href="https://www.wilsite.net" class="link">Inicio</a>
-            <a href="portafolio" class="link">Portafolio</a>
-            <a href="sobremi" class="link">Sobre mí</a>
-            <a href="contacto" class="link">Contacto</a>
+            <a href="portafolio.html" class="link">Portafolio</a>
+            <a href="sobremi.html" class="link">Sobre mí</a>
+            <a href="contacto.html" class="link">Contacto</a>
         </div>
     </nav>
 
     <div class="btnMenu" id="btnMenu"><i class="fas fa-bars"></i></div>
 
-    <section class="proyectos-portafolio" id="proyectos-portafolio">
-        <h2>Mi Portafolio</h2>
-        <div class="tarjetas-portafolio">
-            <div class="tarjeta-proyecto-portafolio" id="tarjeta-proyecto-portafolio">
+    <header class="header">
+        <div class="texto-header" id="texto-header">
+            <p id="hola-header">Hola, soy</p>
+            <br>
+            <h1 id="nombre-header">Wilbert Serrano</h1>
+            <br>
+            <p id="especialidad-header">Me especializo en Diseño y Desarrollo Front End.</p>
+            <br>
+            <a href="sobremi.html"><button id="btn-header">Sobre Mí</button></a>
+        </div>
+        <div class="img-header" id="img-header">
+            <img src="img/img-header.png" alt="">
+        </div>
+    </header>
+    <section class="proyectos-destacados-home" id="proyectos-destacados-home">
+        <h2>Proyectos Destacados</h2>
+        <div class="tarjetas">
+            <div class="tarjeta-proyecto" id="tarjeta-proyecto">
                 <img src="img/cover_dalli.jpg" alt="" class="img-proyecto">
-                <div class="texto-proyecto-portafolio" id="texto-proyecto-portafolio">
+                <div class="texto-proyecto" id="texto-proyecto">
                     <h4>App Librería Dallí</h4>
                     <p>Diseño de aplicación para una librería que atiende en línea y es dirigida a los estudiantes de diseño gráfico.</p>
-                    <a href="https://www.behance.net/gallery/107823847/Libreria-Dalli-App" target="_blank"><button class="ver-proyecto-individual">Ver</button></a>
+                    <a href="https://www.behance.net/gallery/107823847/Libreria-Dalli-App" target="_blank"><button class="ver-proyecto">Ver</button></a>
                 </div>
             </div>
-            <div class="tarjeta-proyecto-portafolio" id="tarjeta-proyecto-portafolio">
+            <div class="tarjeta-proyecto" id="tarjeta-proyecto">
                 <img src="img/cover_maketa.jpg" alt="" class="img-proyecto">
-                <div class="texto-proyecto-portafolio" id="texto-proyecto-portafolio">
+                <div class="texto-proyecto" id="texto-proyecto">
                     <h4>MAKETA</h4>
                     <p>Diseño de sitio web para agencia de diseño de interiores, la cual tiene más de 10 años de experiencia en su sector.</p>
-                    <a href="https://www.behance.net/gallery/108795785/MAKETA-Diseno-Web" target="_blank"><button class="ver-proyecto-individual">Ver</button></a>
-                </div>
-            </div>
-            <div class="tarjeta-proyecto-portafolio" id="tarjeta-proyecto-portafolio">
-                <img src="img/cover_medicos.jpg" alt="" class="img-proyecto">
-                <div class="texto-proyecto-portafolio" id="texto-proyecto-portafolio">
-                    <h4>Consultorio Médico</h4>
-                    <p>Diseño web basado en un consultorio médico que ofrece visitas médicas a domicilio, incluso de especialidades.</p>
-                    <a href="https://www.behance.net/gallery/108795923/Diseno-Web-para-Consultorio-Mdico" target="_blank"><button class="ver-proyecto-individual">Ver</button></a>
-                </div>
-            </div>
-            <div class="tarjeta-proyecto-portafolio" id="tarjeta-proyecto-portafolio">
-                <img src="img/cover_agenciabienesraices.jpg" alt="" class="img-proyecto">
-                <div class="texto-proyecto-portafolio" id="texto-proyecto-portafolio">
-                    <h4>Agencia de Bienes Raíces</h4>
-                    <p>Diseño web basado en una agencia de bienes raíces, el cual muestra cada una de las propiedades en venta.</p>
-                    <a href="https://www.behance.net/gallery/108859415/Diseno-Web-para-Agencia-de-Bienes-Raices" target="_blank"><button class="ver-proyecto-individual">Ver</button></a>
-                </div>
-            </div>
-            <div class="tarjeta-proyecto-portafolio" id="tarjeta-proyecto-portafolio">
-                <img src="img/cover_restaurantecomidachina.jpg" alt="" class="img-proyecto">
-                <div class="texto-proyecto-portafolio" id="texto-proyecto-portafolio">
-                    <h4>Restaurante de Comida China</h4>
-                    <p>Diseño web basado en un restaurante de comida china, donde se muestra la variedad de platillos que ofrecen.</p>
-                    <a href="./proyectos/en-construccion.html" target="_blank"><button class="ver-proyecto-individual">Ver</button></a>
-                </div>
-            </div>
-            <!--
-            <div class="tarjeta-proyecto-portafolio" id="tarjeta-proyecto-portafolio">
-                <img src="img/cover_dalli.jpg" alt="" class="img-proyecto">
-                <div class="texto-proyecto-portafolio" id="texto-proyecto-portafolio">
-                    <h4>Zone Fitness Gym</h4>
-                    <p>Diseño de aplicación para una librería que atiende en línea y es dirigida a los estudiantes de diseño gráfico.</p>
-                    <a href="./proyectos/en-construccion.html"><button class="ver-proyecto-individual">Ver</button></a>
-                </div>
-            </div>
-            -->
-            <div class="tarjeta-proyecto-portafolio" id="tarjeta-proyecto-portafolio">
-                <img src="img/cover_cargando.jpg" alt="" class="img-proyecto">
-                <div class="texto-proyecto-portafolio" id="texto-proyecto-portafolio">
-                    <h4>Próximamente nuevos proyectos</h4>
-                    <p>Se vienen algunos proyectos más, los cuales iré agregando poco a poco a esta sección de mi sitio web. Esto a penas comienza...</p>
-                    <!--<a href="./proyectos/en-construccion.html"><button class="ver-proyecto-individual">Ver</button></a>-->
+                    <a href="https://www.behance.net/gallery/108795785/MAKETA-Diseno-Web" target="_blank"><button class="ver-proyecto">Ver</button></a>
                 </div>
             </div>
         </div>
+        <a href="portafolio.html"><button class="mas-proyectos" id="mas-proyectos">Más Proyectos</button></a>
     </section>
-
     <section class="contactame" id="contactame">
         <div class="caja-form" id="caja-form">
             <h3>Contáctame</h3>
@@ -161,7 +136,6 @@
             </div>
         </div>
     </section>
-
     <footer>
         <div class="redes" id="redes">
             <a href="https://www.linkedin.com/in/wilbert-serrano/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -171,5 +145,6 @@
     </footer>
 
     <script src="js/menu.js"></script>
+    <script src="js/splash.js"></script>
 </body>
 </html>
