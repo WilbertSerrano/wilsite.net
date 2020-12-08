@@ -1459,7 +1459,7 @@ section.habilidades {
 }
 
 section.habilidades h2 {
-  font-size: 42px;
+  font-size: 2.625em;
   padding-bottom: 75px;
 }
 
@@ -1482,7 +1482,7 @@ section.habilidades .contenedores-habilidades .container {
 }
 
 section.habilidades .contenedores-habilidades .container h2 {
-  font-size: 28px;
+  font-size: 1.75em;
   color: #242424;
   padding: 0;
 }
@@ -1564,6 +1564,9 @@ section.habilidades .contenedores-habilidades .container .skills .percent .progr
 }
 
 @media screen and (max-width: 1024px) {
+  section.habilidades {
+    font-size: 14px;
+  }
   section.habilidades .contenedores-habilidades {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
