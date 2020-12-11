@@ -23,7 +23,7 @@ section.proyectos-destacados-home{
         height: auto;
         .tarjeta-proyecto{
             width: 50%;
-            height: 320px;
+            height: 350px;
             background: $blanco;
             border-radius: 25px;
             display: flex;
@@ -53,19 +53,49 @@ section.proyectos-destacados-home{
                 p{
                     font-size: 1em;
                     text-align: center;
+                    a{
+                        text-decoration: none;
+                        color: $celeste;
+                        font-size: 1em;
+                        &:hover{
+                            color: #fddb33;
+                            transition: ease-in-out .25s;
+                        }
+                    }
                 }
-                button.ver-proyecto{
-                    background: $celeste;
-                    color: $blanco;
-                    border: none;
-                    border-radius: 15px;
-                    padding: 10px 40px;
-                    font-size: 1em;
-                    font-weight: $bold;
-                    cursor: pointer;
-                    &:hover{
-                        background: $negro;
-                        transition: ease-in-out .25s;
+                .botones-proyecto{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    button.ver-proyecto{
+                        background: $celeste;
+                        color: $blanco;
+                        border: none;
+                        border-radius: 15px;
+                        padding: 10px 40px;
+                        margin-bottom: 10px;
+                        font-size: 1em;
+                        font-weight: $bold;
+                        cursor: pointer;
+                        &:hover{
+                            background: $negro;
+                            transition: ease-in-out .25s;
+                        }
+                    }
+                    button.probar-proyecto{
+                        background: $gris-oscuro;
+                        color: $blanco;
+                        border: none;
+                        border-radius: 15px;
+                        padding: 10px 40px;
+                        font-size: 1em;
+                        font-weight: $bold;
+                        cursor: pointer;
+                        &:hover{
+                            background: $negro;
+                            transition: ease-in-out .25s;
+                        }
                     }
                 }
             }

@@ -622,7 +622,7 @@ section.proyectos-destacados-home .tarjetas {
 
 section.proyectos-destacados-home .tarjetas .tarjeta-proyecto {
   width: 50%;
-  height: 320px;
+  height: 350px;
   background: #ffffff;
   border-radius: 25px;
   display: -webkit-box;
@@ -676,8 +676,53 @@ section.proyectos-destacados-home .tarjetas .tarjeta-proyecto .texto-proyecto p 
   text-align: center;
 }
 
-section.proyectos-destacados-home .tarjetas .tarjeta-proyecto .texto-proyecto button.ver-proyecto {
+section.proyectos-destacados-home .tarjetas .tarjeta-proyecto .texto-proyecto p a {
+  text-decoration: none;
+  color: #3eb1c8;
+  font-size: 1em;
+}
+
+section.proyectos-destacados-home .tarjetas .tarjeta-proyecto .texto-proyecto p a:hover {
+  color: #fddb33;
+  -webkit-transition: ease-in-out .25s;
+  transition: ease-in-out .25s;
+}
+
+section.proyectos-destacados-home .tarjetas .tarjeta-proyecto .texto-proyecto .botones-proyecto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.proyectos-destacados-home .tarjetas .tarjeta-proyecto .texto-proyecto .botones-proyecto button.ver-proyecto {
   background: #3eb1c8;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 40px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+section.proyectos-destacados-home .tarjetas .tarjeta-proyecto .texto-proyecto .botones-proyecto button.ver-proyecto:hover {
+  background: #242424;
+  -webkit-transition: ease-in-out .25s;
+  transition: ease-in-out .25s;
+}
+
+section.proyectos-destacados-home .tarjetas .tarjeta-proyecto .texto-proyecto .botones-proyecto button.probar-proyecto {
+  background: #bfbfbf;
   color: #ffffff;
   border: none;
   border-radius: 15px;
@@ -687,7 +732,7 @@ section.proyectos-destacados-home .tarjetas .tarjeta-proyecto .texto-proyecto bu
   cursor: pointer;
 }
 
-section.proyectos-destacados-home .tarjetas .tarjeta-proyecto .texto-proyecto button.ver-proyecto:hover {
+section.proyectos-destacados-home .tarjetas .tarjeta-proyecto .texto-proyecto .botones-proyecto button.probar-proyecto:hover {
   background: #242424;
   -webkit-transition: ease-in-out .25s;
   transition: ease-in-out .25s;
@@ -1162,6 +1207,18 @@ footer .redes i {
   text-align: center;
   font-size: 1em;
   width: 80%;
+}
+
+.proyectos-portafolio .tarjetas-portafolio .tarjeta-proyecto-portafolio .texto-proyecto-portafolio p a {
+  text-decoration: none;
+  color: #3eb1c8;
+}
+
+.proyectos-portafolio .tarjetas-portafolio .tarjeta-proyecto-portafolio .texto-proyecto-portafolio p a:hover {
+  font-size: 1em;
+  color: #fddb33;
+  -webkit-transition: ease-in-out .25s;
+  transition: ease-in-out .25s;
 }
 
 .proyectos-portafolio .tarjetas-portafolio .tarjeta-proyecto-portafolio .texto-proyecto-portafolio button.ver-proyecto-individual {

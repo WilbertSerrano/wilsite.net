@@ -48,6 +48,15 @@
                     text-align: center;
                     font-size: 1em;
                     width: 80%;
+                    a{
+                        text-decoration: none;
+                        color: $celeste;
+                        &:hover{
+                            font-size: 1em;
+                            color: #fddb33;
+                            transition: ease-in-out .25s;
+                        }
+                    }
                 }
                 button.ver-proyecto-individual{
                     background: $celeste;
